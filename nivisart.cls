@@ -62,3 +62,41 @@
 \usepackage[version=4]{mhchem} % 提供无机化学支持
 
 \usepackage{anyfontsize} %解决Size substitutions with differences的Warning
+
+% --------------------------------------------------------------------------------------
+% 2021-3-10 增加水印功能
+% 参考https://www.zhihu.com/question/35781113/answer/138334208
+
+\RequirePackage{eso-pic}
+
+% 水印图象
+% 第一个参数：水印文字
+% 第二个参数：文字大小
+% 第三个参数：旋转参数
+% 第四个参数：透明度（默认0.2）
+\newcommand\watermark[4][0.2]{%
+  \put(0,0){%
+    \parbox[b][\paperheight]{\paperwidth}{%
+      \vfill
+      \centering%
+      \begin{tikzpicture}[remember picture,overlay]
+        \node [rotate=#3,scale=#2,text opacity=#4] at (current page.center) {#1}; %中括号内是旋转角度，字体大小
+      \end{tikzpicture}%
+      \vfill
+    }
+  }
+}
+
+% 在document区使用，加载水印
+% 第一个参数：水印文字
+% 第二个参数：文字大小
+% 第三个参数：旋转参数
+% 第四个参数：透明度（默认0.2）
+\newcommand{\loadwatermark}[4][0.2]{
+  \AddToShipoutPicture{\watermark{#1}{#2}{#3}{#4}}
+}
+
+% 中止水印
+\newcommand{\clearwatermark}[4][0.2]{
+  \ClearShipoutPicture
+}
