@@ -1,13 +1,13 @@
-\ProvidesClass{nixivart}[2020/01/01]
+\ProvidesClass{nivisart}[2021/01/01]
 \LoadClass[UTF8]{ctexart} %基于ctexart
 \RequirePackage{cnmath} %中国常用数学符号的自制包
 \RequirePackage{geometry} %改页边距，LaTeX自带的太宽了
-\geometry{a4paper, top=20mm,bottom=30mm,left=25mm,right=25mm,headsep=10pt}
+\geometry{a4paper,top=20mm,bottom=30mm,left=25mm,right=25mm,headsep=10pt}
 \renewcommand{\baselinestretch}{1.5} %1.5倍行距
 \RequirePackage{enumitem}
 \RequirePackage{array}
 
-\RequirePackage{nixivdraw} %支持绘图
+\RequirePackage{nivisdraw} %支持绘图
 
 \renewcommand{\paragraph}[1]{\vspace{1ex} \par \textbf{#1}\quad}
 \renewcommand{\subparagraph}[1]{\par \textbf{#1}\quad}
