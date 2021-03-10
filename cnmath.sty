@@ -1,0 +1,23 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{cnmath}
+\usepackage{amsmath, amsfonts, amssymb, gensymb, xfrac}
+\usepackage{xeCJK}
+%\setCJKmainfont[BoldFont=SimHei,ItalicFont=KaiTi]{SimSun}
+\XeTeXcharclass`∽=1
+\XeTeXcharclass`≌=1
+\XeTeXcharclass`∥=1
+\renewcommand\sim{\mathrel{\text{∽}}}
+\renewcommand\cong{\mathrel{\text{≌}}}
+\renewcommand\parallel{\mathrel{\text{∥}}}
+\renewcommand\geq{\geqslant} %以斜代正
+\renewcommand\leq{\leqslant} %以斜代正
+
+\RequirePackage{amsmath,amssymb}%
+\def\dif{\mathop{}\!\mathrm{d}}
+\DeclareMathOperator{\rank}{rank}
+\RequirePackage{bm}
+\RequirePackage{pifont}
+\RequirePackage{extarrows} %长等号
+\RequirePackage{scalerel}%缩放公式大小
+\RequirePackage{mathrsfs} %数学字体
+\RequirePackage{amsthm} %定理环境
