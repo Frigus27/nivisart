@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{nixivfig}[2020/01/01]
+\ProvidesClass{nixivfig}[2021/01/01]
 
 \LoadClass{standalone}
 
