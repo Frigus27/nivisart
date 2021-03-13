@@ -7,6 +7,7 @@
 \RequirePackage{enumitem}
 \RequirePackage{array}
 \RequirePackage{background} %加背景功能
+\backgroundsetup{contents=}
 
 \RequirePackage{nivisdraw} %支持绘图
 
