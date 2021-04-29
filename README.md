@@ -23,5 +23,5 @@
 
 若将此模版用作子项目，第一次编译时，请为`nivisart`目录下的每一个latex文件在根目录（父项目目录）创建同名的符号链接，以确保`LaTeX`解释器能正常运行。
 
-**Windows用户**：也可以运行`nivisart`目录下的`makelink.bat`文件，以建立符号链接。
+**注：**若有`python`，也可以运行`nivisart`目录下的`makelink.py`文件以建立符号链接。
 
